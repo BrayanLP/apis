@@ -1,0 +1,20 @@
+{
+  "Alumnos": {
+    "nombre": { "string": {} },
+    "dni": { "string": {} },
+    "fecha_ingreso": { "string": {} },
+    "correo": { "string": {} },
+    "celular": { "string": {} },
+    "cursos": {
+      "hasMany": "Cursos"
+    }
+  },
+  "Cursos": {
+    "nombre": { "string": {} },
+    "fecha_inicio": { "string": {} },
+    "fecha_fin": { "string": {} },
+    "alumnos": {
+      "belongsTo": "Alumnos"
+    }
+  }
+}
